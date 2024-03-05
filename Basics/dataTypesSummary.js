@@ -44,3 +44,9 @@ let userObj = {
 const hello = function helloWorld() {
   console.log("Hello world");
 };
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+// Primitive data types go into Stack memmory
+// And non premitive go into Heap memmory
+// In Stack memmory you will get a copy
+// And in Heap memmory you will get a reference
