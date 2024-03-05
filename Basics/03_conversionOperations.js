@@ -38,3 +38,27 @@ let ageNo = 15;
 let convertAge = String(ageNo);
 console.log(ageNo);
 console.log(typeof convertAge);
+
+/*
+OPERATIONS
+*/
+let str1 = "hello";
+let str2 = " world";
+let str3 = str1 + str2;
+console.log(str3);
+
+//What not to do. Avoid writing non conventional complex codes.
+/*
+console.log("2" + 2);
+console.log(2 + 4 + "1");
+console.log(+true);
+console.log(+"");
+let num1, num2, num3;
+num1 = num2 = num3 = 4 + 2;
+*/
+
+let countNo = 3;
+++countNo;
+console.log(countNo);
+countNo++;
+console.log(countNo);
