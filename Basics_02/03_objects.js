@@ -2,9 +2,6 @@
 // another concept is Singleton. Any declaration made through constructor that will be a constructor.
 // Literal will have multiple instances and not a singleton
 
-// Singleton declaration through constructors.
-// Object.create
-
 // Object Literals
 const jsUser = {}; //empty object
 
