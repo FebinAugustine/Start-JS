@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: aliceblue">
+    <h1>Hello World</h1>
+    <button id="stop1">STOP</button>
+    <div>
+      <h2>New Start Stop</h2>
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+    </div>
+  </body>
+  <script>
+    const stop = setTimeout(() => {
+      console.log((document.querySelector("h1").innerHTML = "Bingo and Jango"));
+    }, 2000);
+    document.querySelector("#stop1").addEventListener("click", (e) => {
+      clearTimeout(stop);
+      console.log("Stopped");
+    });
+
+    // Set interval API
+    setInterval(() => {
+      //   console.log("Bingo", Date.now());
+    }, 1000);
+
+    //generate random color
+    const randomColor = () => {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    };
+
+    console.log(randomColor());
+
+    // Start Stop Function
+    let intervalId;
+    const startChangingColor = () => {
+      if (!intervalId) {
+        intervalId = setInterval(changeBgColor, 1000);
+      }
+
+      function changeBgColor() {
+        document.body.style.backgroundColor = randomColor();
+      }
+    };
+    const stopChangingColor = () => {
+      clearInterval(intervalId);
+      intervalId = null;
+    };
+
+    document
+      .querySelector("#start")
+      .addEventListener("click", startChangingColor);
+    document
+      .querySelector("#stop")
+      .addEventListener("click", stopChangingColor);
+  </script>
+</html>
