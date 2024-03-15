@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="p4.js"></script>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <form
+        class="form"
+        style="
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 20%;
+        "
+      >
+        <h1>Guess The Number</h1>
+        <input
+          type="number"
+          class="guessField"
+          id="guessField"
+          style="height: 30px; margin-bottom: 10px"
+        />
+        <input
+          type="submit"
+          value="Submit Guess"
+          class="guessSubmit"
+          id="subt"
+          style="
+            height: 40px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: orange;
+            font-size: 16px;
+            font-weight: 700;
+            color: #3c3c3c;
+          "
+        />
+      </form>
+      <div class="resultParas">
+        <p>Previous Guess: <span class="prvGuess"></span></p>
+        <p>Guess Remaining: <span class="remGuess">10</span></p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+  </body>
+</html>

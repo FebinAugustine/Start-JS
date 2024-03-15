@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="p2.js"></script>
+  </head>
+  <body
+    style="
+      background-color: #212121;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div
+      class="content"
+      style="
+        display: flex;
+        flex-direction: column;
+        min-width: 30%;
+        padding: 20px;
+        padding-top: 10vh;
+        /* margin-top: 20px; */
+        background-color: blue;
+      "
+    >
+      <hi
+        class="heading"
+        style="margin: 10px; font-size: 2vw; text-align: center"
+        >BMI Calculator</hi
+      >
+      <h4 for="number" style="margin: 10px 10px 5px 10px">Height in CM</h4>
+      <input
+        class="input"
+        id="height"
+        type="number"
+        style="margin: 10px; min-height: 30px"
+      />
+      <h4 for="number" style="margin: 10px 10px 5px 10px">Weight in KG</h4>
+      <input
+        class="input"
+        id="weight"
+        type="number"
+        style="margin: 10px; min-height: 30px"
+      />
+      <button
+        class="submitBtn"
+        type="submit"
+        style="
+          margin: 10px;
+          min-height: 35px;
+          background-color: orange;
+          border-radius: 10px;
+          cursor: pointer;
+        "
+      >
+        Calculate
+      </button>
+      <h3 class="result" id="calResult" style="margin-left: 10px">
+        The Result is:
+      </h3>
+
+      <h2 style="margin-left: 10px; margin-bottom: 10px">BMI Weight Guide:</h2>
+      <ul style="margin-top: 0">
+        <li>Underweight is less than 20</li>
+        <li>Normal weight is between 20 and 24</li>
+        <li>Over weight is above 24</li>
+      </ul>
+    </div>
+  </body>
+</html>
